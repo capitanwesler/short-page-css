@@ -24,7 +24,7 @@
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
-    //transform: scale(80);
+    transition: all 300ms;
   }
 
   &__nav {
@@ -76,5 +76,9 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
   }
 }

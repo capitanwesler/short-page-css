@@ -553,7 +553,8 @@ html {
   top: 6.5rem;
   right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: all 300ms; }
 
 .navigation__nav {
   height: 100vh;
@@ -594,6 +595,9 @@ html {
   background-position: 100%;
   color: #55c57a;
   transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
 
 .section-about {
   background-color: #f7f7f7;
